@@ -32,7 +32,7 @@ def cohereReply(prompt):
             message=prompt,
             documents=docs,
             model='command',
-            preamble_override=preamble_prompt,
+            preamble=preamble_prompt,
             chat_history=st.session_state.messages,
         )
     else:
@@ -41,7 +41,7 @@ def cohereReply(prompt):
             message=prompt,
             documents=docs,
             model='command',
-            preamble_override=preamble_prompt,
+            preamble=preamble_prompt,
 
         )
 
