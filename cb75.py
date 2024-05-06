@@ -42,6 +42,7 @@ def cohereReply(prompt):
             documents=docs,
             model='command',
             preamble=preamble_prompt,
+            chat_history=st.session_state.messages,
 
         )
 
